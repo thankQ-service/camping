@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제1회 자라섬캠핑장 캠핑스쿨 - 자라 모양 유인물 교보재 시안</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 10mm;
+    }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #0F172A;
+    }
+    .font-cute {
+      font-family: 'Jua', sans-serif;
+    }
+    .turtle-drop {
+      filter: drop-shadow(0 18px 25px rgba(0, 0, 0, 0.45));
+    }
+    @media print {
+      body {
+        background: white !important;
+        padding: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-after: always;
+        break-after: page;
+      }
+      .turtle-drop {
+        filter: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="text-slate-800 p-3 sm:p-6 min-h-screen flex flex-col items-center">
+
+  <!-- ================= TOP NAV BAR (NO PRINT) ================= -->
+  <header class="no-print w-full max-w-6xl mb-6 bg-slate-900/90 backdrop-blur border border-slate-700 rounded-3xl p-4 sm:p-5 text-white shadow-2xl">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-2 mb-1.5">
+          <span class="px-3 py-0.5 rounded-full text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
+            🐢 실물형 자라 다이컷 리플릿 시안
+          </span>
+          <span class="text-xs text-slate-400">균형 잡힌 중앙 정렬 & 가독성 최적화</span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-black font-cute text-amber-400 tracking-wide">
+          가평 자라섬 캠핑스쿨 "자라 모양 교보재 유인물 가이드"
+        </h1>
+        <p class="text-xs text-slate-300 mt-1">
+          초등학생도 한눈에 이해하는 직관적인 센터 정렬 & 좌우 대칭 인포그래픽
+        </p>
+      </div>
+
+      <!-- Control Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <button onclick="scrollToSection('sec-cover')" class="px-4 py-2 rounded-xl text-xs font-cute text-slate-900 bg-amber-400 hover:bg-amber-300 transition shadow font-bold">
+          1. 겉표지 보기
+        </button>
+        <button onclick="scrollToSection('sec-inside')" class="px-4 py-2 rounded-xl text-xs font-cute text-slate-900 bg-emerald-400 hover:bg-emerald-300 transition shadow font-bold">
+          2. 안쪽면 (펼침면)
+        </button>
+        <button onclick="scrollToSection('sec-dieline')" class="px-3.5 py-2 rounded-xl text-xs font-medium bg-slate-800 text-slate-200 hover:bg-slate-700 transition border border-slate-600">
+          인쇄소 목형 전개도
+        </button>
+        <button onclick="window.print()" class="px-4 py-2 rounded-xl text-xs font-bold bg-orange-600 text-white hover:bg-orange-500 transition shadow flex items-center gap-1.5">
+          <i class="fa-solid fa-print"></i>
+          <span>인쇄 / PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN WORKSPACE ================= -->
+  <main class="w-full max-w-6xl space-y-12">
+
+    <!-- ================= 1. COVER DESIGN (등딱지 겉면) ================= -->
+    <section id="sec-cover" class="bg-slate-800/60 p-6 sm:p-10 rounded-3xl border border-slate-700 shadow-2xl text-center page-break">
+      <div class="mb-5 flex flex-col items-center justify-center text-center">
+        <span class="inline-block bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30 mb-1 font-cute">
+          [ 겉표지 : 책을 덮었을 때 ]
+        </span>
+        <h2 class="text-xl sm:text-2xl font-bold font-cute text-white">
+          자라 등딱지 겉표지 디자인
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          미니멀 타이틀 중심의 깔끔한 자라 실루엣 단독 디자인
+        </p>
+      </div>
+
+      <!-- Real Die-Cut Turtle Graphic (Cover) -->
+      <div class="mx-auto max-w-lg turtle-drop transition transform hover:scale-[1.01] duration-300">
+        <div class="relative w-full aspect-[4/5] bg-gradient-to-b from-[#2D6A4F] via-[#1B4332] to-[#10281E] rounded-[48%] border-[8px] border-[#0E281C] shadow-2xl flex flex-col justify-between items-center p-6 text-white overflow-visible">
+
+          <!-- Turtle Head (Top Center) -->
+          <div class="absolute -top-14 left-1/2 -translate-x-1/2 w-28 h-20 bg-[#6AB98E] rounded-t-full border-4 border-[#0E281C] flex flex-col items-center justify-center shadow-md z-10">
+            <div class="w-3.5 h-2 bg-[#4D9970] rounded-t-md -mt-1.5 flex items-center justify-center gap-1">
+              <span class="w-0.5 h-0.5 bg-[#0E281C] rounded-full"></span>
+              <span class="w-0.5 h-0.5 bg-[#0E281C] rounded-full"></span>
+            </div>
+            <div class="flex justify-between w-14 mt-1">
+              <div class="w-3.5 h-3.5 bg-slate-950 rounded-full border border-white flex items-center justify-center">
+                <span class="w-1 h-1 bg-white rounded-full"></span>
+              </div>
+              <div class="w-3.5 h-3.5 bg-slate-950 rounded-full border border-white flex items-center justify-center">
+                <span class="w-1 h-1 bg-white rounded-full"></span>
+              </div>
+            </div>
+            <div class="w-5 h-2 border-b-2 border-slate-900 rounded-b-full mt-1"></div>
+            <span class="absolute -bottom-2 bg-amber-400 text-slate-950 text-[9px] font-black px-2 py-0.5 rounded-full font-cute border border-[#0E281C] shadow-sm">
+              캠핑스쿨
+            </span>
+          </div>
+
+          <!-- Feet & Tail -->
+          <div class="absolute top-12 -left-8 w-16 h-12 bg-[#6AB98E] rounded-full -rotate-45 border-4 border-[#0E281C] flex items-center justify-center shadow font-cute font-bold text-xs text-[#0E281C]">
+            가평
+          </div>
+          <div class="absolute top-12 -right-8 w-16 h-12 bg-[#6AB98E] rounded-full rotate-45 border-4 border-[#0E281C] flex items-center justify-center shadow font-cute font-bold text-xs text-[#0E281C]">
+            자라섬
+          </div>
+          <div class="absolute bottom-12 -left-6 w-14 h-10 bg-[#6AB98E] rounded-full -rotate-15 border-4 border-[#0E281C] shadow"></div>
+          <div class="absolute bottom-12 -right-6 w-14 h-10 bg-[#6AB98E] rounded-full rotate-15 border-4 border-[#0E281C] shadow"></div>
+          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-[#6AB98E] rotate-45 rounded border-b-4 border-r-4 border-[#0E281C]"></div>
+
+          <!-- Cover Content (All Centered & Balanced) -->
+          <div class="mt-8 flex flex-col items-center justify-center text-center">
+            <span class="bg-amber-400 text-slate-950 text-xs font-black px-3.5 py-1 rounded-full font-cute tracking-wide shadow-md">
+              2026 캠핑 아카데미
+            </span>
+          </div>
+
+          <!-- Main Center Title & Shell Emblem -->
+          <div class="my-auto flex flex-col items-center justify-center text-center space-y-3">
+            <!-- Hexagon Shell Centerpiece -->
+            <div class="w-24 h-24 relative flex items-center justify-center">
+              <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
+                <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#1B4D36" stroke="#52B788" stroke-width="4"/>
+                <polygon points="50,18 80,33 80,67 50,82 20,67 20,33" fill="#133827" stroke="#A7E8BD" stroke-width="2"/>
+                <text x="50" y="55" font-size="28" text-anchor="middle" dominant-baseline="middle">🐢</text>
+              </svg>
+            </div>
+
+            <!-- Title & Date Centered -->
+            <div class="space-y-1 text-center">
+              <h3 class="text-2xl sm:text-3xl font-black font-cute text-amber-300 drop-shadow-md tracking-wider leading-snug text-center">
+                제1회 자라섬캠핑장<br>캠핑스쿨
+              </h3>
+              <div class="h-0.5 w-16 bg-amber-400/50 mx-auto my-2 rounded-full"></div>
+              <p class="text-sm sm:text-base font-bold text-emerald-100 font-cute text-center">
+                11월 7일 토요일 ~ 11월 8일 일요일
+              </p>
+            </div>
+
+            <div class="bg-black/30 border border-emerald-400/30 rounded-full px-4 py-1 text-[11px] text-emerald-200 text-center">
+              장소 : 경기 가평 자라섬오토캠핑장
+            </div>
+          </div>
+
+          <!-- Bottom Action Prompt -->
+          <div class="mb-4 bg-amber-400/20 border border-amber-400/40 rounded-full px-5 py-2 text-center text-amber-300 text-xs font-cute animate-pulse flex items-center justify-center gap-1.5 shadow-sm">
+            <span>표지를 책처럼 활짝 열어보세요!</span>
+            <i class="fa-solid fa-arrow-turn-right text-xs"></i>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. INSIDE SPREAD DESIGN (펼침면 1면 & 2면) ================= -->
+    <section id="sec-inside" class="bg-slate-800/60 p-5 sm:p-8 rounded-3xl border border-slate-700 shadow-2xl text-center page-break">
+      <div class="mb-6 flex flex-col items-center justify-center text-center">
+        <span class="inline-block bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/30 mb-1 font-cute">
+          [ 안쪽면 : 등딱지를 책처럼 펼쳤을 때 ]
+        </span>
+        <h2 class="text-xl sm:text-2xl font-bold font-cute text-white">
+          왼쪽 1면(수업 안내) & 오른쪽 2면(타임테이블)
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          가운데 정렬로 가독성을 극대화한 2페이지 스프레드 레이아웃
+        </p>
+      </div>
+
+      <!-- Spread Container: 2-Page Foldable Shell Spread -->
+      <div class="mx-auto max-w-5xl turtle-drop">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#F8F9FA] rounded-[42px] border-[8px] border-[#10281E] p-4 sm:p-6 shadow-2xl">
+
+          <!-- ================= LEFT: 1면 (등딱지 안쪽 뒷면) ================= -->
+          <div class="bg-gradient-to-b from-[#1C4E35] to-[#102F20] text-white rounded-[32px] p-5 flex flex-col justify-between border-4 border-[#0E281C] shadow-inner text-center">
+            
+            <!-- Page 1 Header (Centered) -->
+            <div class="flex flex-col items-center justify-center text-center border-b border-emerald-500/30 pb-3 mb-3">
+              <span class="bg-amber-400 text-slate-950 px-3 py-0.5 rounded-full text-xs font-black font-cute mb-1 shadow-sm">
+                1면 : 캠핑스쿨 4대 수업
+              </span>
+              <h3 class="text-xl sm:text-2xl font-black font-cute text-amber-300 text-center">
+                우리가족 캠핑 첫걸음!
+              </h3>
+              <p class="text-[11px] text-emerald-200 font-medium mt-0.5 text-center">
+                초등학생도 쏙쏙 배우는 4가지 핵심 마스터 코스
+              </p>
+            </div>
+
+            <!-- 4 Classes Grid (All Centered & Balanced) -->
+            <div class="grid grid-cols-2 gap-2.5 my-auto">
+              
+              <!-- 1교시 -->
+              <div class="bg-white/10 p-3 rounded-2xl border border-white/20 flex flex-col items-center justify-center text-center">
+                <span class="text-2xl mb-1">⛺</span>
+                <strong class="text-xs font-cute text-amber-300 block text-center">[1교시] 텐트 피칭</strong>
+                <p class="text-[11px] text-white font-bold mt-1 text-center leading-tight">
+                  폴대 쏙! 펙 콩콩!<br>우리 집 튼튼 완성!
+                </p>
+                <span class="mt-2 text-[9.5px] bg-black/25 text-emerald-200 px-2 py-0.5 rounded-full text-center">
+                  바닥매트 & 폴대 결합
+                </span>
+              </div>
+
+              <!-- 2교시 (안전 강조) -->
+              <div class="bg-rose-950/40 p-3 rounded-2xl border-2 border-rose-400/50 flex flex-col items-center justify-center text-center">
+                <span class="text-2xl mb-1">🚨</span>
+                <strong class="text-xs font-cute text-rose-300 block text-center">[2교시] 캠핑 안전교육</strong>
+                <p class="text-[11px] text-rose-100 font-bold mt-1 text-center leading-tight">
+                  텐트 안 불 절대금지!<br>소화기 위치 찜콩!
+                </p>
+                <span class="mt-2 text-[9.5px] bg-rose-900/60 text-rose-200 px-2 py-0.5 rounded-full text-center font-bold">
+                  경보기 ON · 안전 최우선
+                </span>
+              </div>
+
+              <!-- 3교시 -->
+              <div class="bg-white/10 p-3 rounded-2xl border border-white/20 flex flex-col items-center justify-center text-center">
+                <span class="text-2xl mb-1">🥩</span>
+                <strong class="text-xs font-cute text-amber-300 block text-center">[3교시] 바비큐스쿨</strong>
+                <p class="text-[11px] text-white font-bold mt-1 text-center leading-tight">
+                  맛있는 고기 굽기!<br>남은 숯 안전히 끄기!
+                </p>
+                <span class="mt-2 text-[9.5px] bg-black/25 text-amber-200 px-2 py-0.5 rounded-full text-center">
+                  화로대 사용 & 숯 처리법
+                </span>
+              </div>
+
+              <!-- 4교시 -->
+              <div class="bg-white/10 p-3 rounded-2xl border border-white/20 flex flex-col items-center justify-center text-center">
+                <span class="text-2xl mb-1">🌱</span>
+                <strong class="text-xs font-cute text-teal-300 block text-center">[4교시] 클린 철수</strong>
+                <p class="text-[11px] text-white font-bold mt-1 text-center leading-tight">
+                  머문 자리는 흔적 없이!<br>분리수거 척척!
+                </p>
+                <span class="mt-2 text-[9.5px] bg-black/25 text-teal-200 px-2 py-0.5 rounded-full text-center">
+                  장비 정리 & LNT 실천
+                </span>
+              </div>
+
+            </div>
+
+            <!-- Mission Stamp Zone (Centered) -->
+            <div class="mt-3 bg-emerald-950/70 p-2.5 rounded-2xl border border-emerald-500/30 flex flex-col items-center justify-center text-center">
+              <span class="text-xs font-cute text-amber-300 mb-1.5 flex items-center justify-center gap-1">
+                <span>🎖️</span> <strong>어린이 탐험가 4대 미션 스탬프</strong>
+              </span>
+              <div class="flex items-center justify-center gap-3">
+                <div class="flex flex-col items-center">
+                  <div class="w-7 h-7 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-[10px] font-black text-amber-300 font-cute">1</div>
+                  <span class="text-[8.5px] text-emerald-200 mt-0.5 text-center">피칭</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <div class="w-7 h-7 rounded-full bg-rose-500/20 border border-rose-400/40 flex items-center justify-center text-[10px] font-black text-rose-300 font-cute">2</div>
+                  <span class="text-[8.5px] text-rose-200 mt-0.5 text-center">안전</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <div class="w-7 h-7 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-[10px] font-black text-amber-300 font-cute">3</div>
+                  <span class="text-[8.5px] text-amber-200 mt-0.5 text-center">바비큐</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <div class="w-7 h-7 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-[10px] font-black text-teal-300 font-cute">4</div>
+                  <span class="text-[8.5px] text-teal-200 mt-0.5 text-center">클린</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ================= RIGHT: 2면 (자라 배 속 다음 면) ================= -->
+          <div class="bg-[#FFFDF7] text-slate-800 rounded-[32px] p-5 flex flex-col justify-between border-4 border-[#E2E8F0] shadow-inner text-center">
+            
+            <!-- Page 2 Header (Centered) -->
+            <div class="flex flex-col items-center justify-center text-center border-b border-slate-200 pb-3 mb-2">
+              <span class="bg-emerald-100 text-emerald-900 px-3 py-0.5 rounded-full text-xs font-black font-cute mb-1 border border-emerald-300 shadow-sm">
+                2면 : 1박 2일 일정표
+              </span>
+              <h3 class="text-xl sm:text-2xl font-black font-cute text-emerald-950 text-center">
+                신나는 1박 2일 타임테이블
+              </h3>
+              <p class="text-[11px] text-slate-500 font-medium mt-0.5 text-center">
+                2026. 11. 7.(토) ~ 11. 8.(일) | 가평 자라섬캠핑장
+              </p>
+            </div>
+
+            <!-- Two-Column Timetable (All Centered Lines) -->
+            <div class="grid grid-cols-2 gap-2.5 my-auto">
+              
+              <!-- 1일 차 -->
+              <div class="bg-amber-50/90 border border-amber-200 rounded-2xl p-2.5 flex flex-col justify-between text-center">
+                <div class="bg-amber-200/80 text-amber-950 rounded-xl py-1 px-2 mb-2 text-center">
+                  <strong class="text-xs font-cute block text-center">1일 차 (11/7, 토)</strong>
+                </div>
+                <div class="space-y-1.5 text-[10.5px]">
+                  <div class="py-0.5 text-center">
+                    <span class="text-amber-800 font-bold block">14:00 ~ 15:00</span>
+                    <span class="font-medium">입실 및 체크인</span>
+                  </div>
+                  <div class="bg-white py-1 px-1.5 rounded-lg border border-amber-200 shadow-xs text-center">
+                    <span class="text-emerald-700 font-black block">15:00 ~ 16:00</span>
+                    <strong class="text-emerald-950 block">텐트 피칭 실습 (1교시)</strong>
+                  </div>
+                  <div class="py-0.5 text-center">
+                    <span class="text-slate-500 font-bold block">16:00 ~ 16:30</span>
+                    <span>휴식 및 개인 정비</span>
+                  </div>
+                  <div class="bg-rose-50 py-1 px-1.5 rounded-lg border border-rose-200 shadow-xs text-center">
+                    <span class="text-rose-600 font-black block">16:30 ~ 17:00</span>
+                    <strong class="text-rose-950 block">캠핑 안전교육 (2교시)</strong>
+                  </div>
+                  <div class="bg-white py-1 px-1.5 rounded-lg border border-amber-200 shadow-xs text-center">
+                    <span class="text-orange-600 font-black block">17:00 ~ 18:00</span>
+                    <strong class="text-orange-950 block">바비큐스쿨 (3교시)</strong>
+                  </div>
+                  <div class="py-0.5 text-center">
+                    <span class="text-amber-800 font-bold block">18:00 ~ 20:00</span>
+                    <span>가평 저녁식사 (자율)</span>
+                  </div>
+                  <div class="py-0.5 text-center">
+                    <span class="text-amber-800 font-bold block">20:00 ~ 22:00</span>
+                    <span>캠프파이어 & 자유시간</span>
+                  </div>
+                  <div class="bg-slate-100 py-1 rounded-md text-slate-700 font-bold text-center">
+                    <span>22:00 ~ 쉿! 매너타임</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2일 차 -->
+              <div class="bg-emerald-50/90 border border-emerald-200 rounded-2xl p-2.5 flex flex-col justify-between text-center">
+                <div class="bg-emerald-200/80 text-emerald-950 rounded-xl py-1 px-2 mb-2 text-center">
+                  <strong class="text-xs font-cute block text-center">2일 차 (11/8, 일)</strong>
+                </div>
+                <div class="space-y-1.5 text-[10.5px]">
+                  <div class="py-0.5 text-center">
+                    <span class="text-emerald-800 font-bold block">08:30</span>
+                    <span>상쾌한 기상</span>
+                  </div>
+                  <div class="bg-white py-1 px-1.5 rounded-lg border border-emerald-300 shadow-xs text-center">
+                    <span class="text-emerald-700 font-black block">08:30 ~ 09:30</span>
+                    <strong class="text-emerald-950 block">이화원 숲체험 탐험</strong>
+                  </div>
+                  <div class="py-0.5 text-center">
+                    <span class="text-emerald-800 font-bold block">09:30 ~ 10:30</span>
+                    <span>맛있는 아침식사</span>
+                  </div>
+                  <div class="py-0.5 text-center">
+                    <span class="text-slate-500 font-bold block">10:30 ~ 11:00</span>
+                    <span>개인 정비 및 준비</span>
+                  </div>
+                  <div class="bg-teal-50 py-1 px-1.5 rounded-lg border border-teal-300 shadow-xs text-center">
+                    <span class="text-teal-700 font-black block">11:00 ~ 12:00</span>
+                    <strong class="text-teal-950 block">텐트 철수 & LNT (4교시)</strong>
+                  </div>
+                  <div class="py-0.5 text-center">
+                    <span class="text-emerald-800 font-bold block">12:00</span>
+                    <span>사이트 퇴실 완료</span>
+                  </div>
+                  <div class="bg-emerald-100 py-1 px-1.5 rounded-lg border border-emerald-300 shadow-xs text-center">
+                    <span class="text-emerald-950 font-black block">12:00 ~ 12:30</span>
+                    <strong class="text-emerald-950 block">수료식 & 단체 기념촬영!</strong>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Tips & Hotline (Centered) -->
+            <div class="mt-3 grid grid-cols-2 gap-2 text-center">
+              <div class="bg-amber-100/70 p-2 rounded-xl border border-amber-300 text-center flex flex-col items-center justify-center">
+                <span class="text-[10px] font-black text-amber-900 font-cute block text-center">
+                  💡 가평 나들이 꿀팁
+                </span>
+                <span class="text-[9px] text-amber-800 text-center leading-tight mt-0.5">
+                  가평잣고을시장 맛집 탐방<br>남이섬 짚와이어 체험
+                </span>
+              </div>
+              <div class="bg-slate-900 text-white p-2 rounded-xl text-center flex flex-col items-center justify-center">
+                <span class="text-[10px] font-black text-amber-300 font-cute block text-center">
+                  📞 긴급 안심 핫라인
+                </span>
+                <span class="text-[9px] text-slate-300 text-center leading-tight mt-0.5">
+                  운영본부 010-7140-7798<br>비상시 즉시 119
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. PRODUCTION DIELINE SPREAD (인쇄소 목형 전개도) ================= -->
+    <section id="sec-dieline" class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl text-slate-900 border border-slate-200 text-center">
+      
+      <div class="border-b-2 border-emerald-900 pb-3 mb-6 flex flex-col items-center justify-center text-center">
+        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase font-cute mb-1">
+          Dieline Spec / 인쇄소 전달용 목형 전개도
+        </span>
+        <h3 class="text-xl sm:text-2xl font-black font-cute text-emerald-950 text-center">
+          자라 실루엣 다이컷 & 1줄 오시선 전개 구조
+        </h3>
+        <p class="text-xs text-slate-500 mt-1 text-center">
+          외곽 특수 도무송(목형 톰슨 커팅) + 좌측 척추(Spine) 기준 책 넘김 제작 사양
+        </p>
+      </div>
+
+      <!-- Flat Visuals -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+        
+        <!-- Outside Flat -->
+        <div class="border-2 border-slate-200 rounded-2xl p-4 bg-slate-50 flex flex-col justify-between items-center text-center">
+          <div class="w-full">
+            <span class="text-xs font-bold text-slate-700 bg-white px-2.5 py-1 rounded-md border border-slate-300 inline-block mb-3 text-center">
+              [외면 전개도] 뒷면 배(좌) + 앞표지 등딱지(우)
+            </span>
+            <div class="w-full h-52 rounded-2xl grid grid-cols-2 border-2 border-dashed border-rose-500 overflow-hidden shadow-inner text-center">
+              <!-- Back Cover -->
+              <div class="bg-[#FCFAF2] p-3 flex flex-col items-center justify-center text-center border-r-2 border-dashed border-blue-500">
+                <span class="text-2xl mb-1">🐢</span>
+                <strong class="text-xs font-cute text-emerald-950 text-center">가평 자라섬오토캠핑장</strong>
+                <p class="text-[9px] text-slate-500 mt-1 text-center">경기도 가평군 가평읍 자라섬로 60</p>
+                <span class="text-[8px] text-slate-400 mt-2 text-center">주관: (주)하비비커뮤니케이션</span>
+              </div>
+              <!-- Front Shell -->
+              <div class="bg-[#1B4332] text-white p-3 flex flex-col items-center justify-center text-center">
+                <span class="text-[9px] bg-amber-400 text-slate-950 font-black px-2 py-0.5 rounded-full font-cute mb-1">
+                  제1회 자라섬캠핑스쿨
+                </span>
+                <strong class="text-xs font-cute text-amber-300 text-center">등딱지 겉표지</strong>
+                <p class="text-[8.5px] text-emerald-200 mt-1 text-center">11월 7일(토) ~ 8일(일)</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-3 text-center">
+            * <strong>빨간 점선:</strong> 외곽 자라 목형 커팅선 / <strong>파란 점선:</strong> 중앙 1줄 오시(접는 선)
+          </p>
+        </div>
+
+        <!-- Inside Flat -->
+        <div class="border-2 border-slate-200 rounded-2xl p-4 bg-slate-50 flex flex-col justify-between items-center text-center">
+          <div class="w-full">
+            <span class="text-xs font-bold text-slate-700 bg-white px-2.5 py-1 rounded-md border border-slate-300 inline-block mb-3 text-center">
+              [내면 전개도] 1면 수업 안내(좌) + 2면 타임테이블(우)
+            </span>
+            <div class="w-full h-52 rounded-2xl grid grid-cols-2 border-2 border-dashed border-rose-500 overflow-hidden shadow-inner text-center">
+              <!-- Page 1 -->
+              <div class="bg-[#16472D] text-white p-3 flex flex-col items-center justify-center text-center border-r-2 border-dashed border-blue-500">
+                <span class="text-[9px] font-cute text-amber-300 bg-black/30 px-2 py-0.5 rounded-full mb-1">
+                  1면 : 등딱지 안쪽
+                </span>
+                <strong class="text-[11px] font-cute text-white text-center">4대 캠핑스쿨 수업</strong>
+                <span class="text-[8.5px] text-emerald-200 mt-1 text-center leading-tight">
+                  1교시 피칭 · 2교시 안전<br>3교시 바비큐 · 4교시 클린
+                </span>
+              </div>
+              <!-- Page 2 -->
+              <div class="bg-[#FCFAF2] text-slate-800 p-3 flex flex-col items-center justify-center text-center">
+                <span class="text-[9px] font-cute text-emerald-900 bg-emerald-100 px-2 py-0.5 rounded-full mb-1">
+                  2면 : 배 속 본문
+                </span>
+                <strong class="text-[11px] font-cute text-emerald-950 text-center">1박 2일 일정표</strong>
+                <span class="text-[8.5px] text-slate-600 mt-1 text-center leading-tight">
+                  토/일 타임테이블<br>가평 꿀팁 & 비상 핫라인
+                </span>
+              </div>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-3 text-center">
+            * <strong>펼침 시 효과:</strong> 책을 넘겼을 때 왼쪽에는 수업 안내, 오른쪽에는 타임테이블이 직관적으로 매칭됩니다.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Spec Table -->
+      <div class="mt-6 border border-slate-200 rounded-2xl overflow-hidden max-w-3xl mx-auto text-left">
+        <table class="w-full text-xs">
+          <tbody class="divide-y divide-slate-200">
+            <tr class="bg-slate-50">
+              <th class="py-2.5 px-4 font-bold text-slate-800 w-32 text-center">제작 형태</th>
+              <td class="py-2.5 px-4 text-emerald-900 font-bold">
+                자라(거북이) 모양 특수 목형 다이컷(도무송) 좌측 힌지 1줄 오시 2단 북릿
+              </td>
+            </tr>
+            <tr>
+              <th class="py-2.5 px-4 font-bold text-slate-800 bg-slate-50 text-center">완성 규격</th>
+              <td class="py-2.5 px-4">
+                펼침 전개 규격 297mm × 210mm (A4 규격 이내) / 접었을 때 약 148.5mm × 210mm
+              </td>
+            </tr>
+            <tr class="bg-slate-50">
+              <th class="py-2.5 px-4 font-bold text-slate-800 text-center">권장 지질</th>
+              <td class="py-2.5 px-4 text-slate-700">
+                <strong>아르떼 또는 랑데뷰 240g ~ 260g</strong> (탄성 우수) 또는 <strong>스노우지 250g 무광코팅</strong> (방수/내구성)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="no-print mt-10 text-center text-xs text-slate-500 space-y-1">
+    <p>가평 자라섬캠핑장 캠핑스쿨 | 주최·주관: 주식회사 하비비커뮤니케이션 (땡큐캠핑)</p>
+    <p>본 페이지는 인쇄소 및 제작 업체 발주를 위한 디자인 가이드 & 시안 통합 웹 문서입니다.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
